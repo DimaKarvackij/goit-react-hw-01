@@ -1,7 +1,9 @@
 import Profile from './components/Profile/Profile.jsx'
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx'
 import FriendList from './components/FriendList/FriendList.jsx'
 import userData from './userData.json'
 import friends from './friends.json'
+import transactions from './transactions.json'
 
 // import transactions from './transactions.json'
 
@@ -16,8 +18,7 @@ export default function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
-
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </>
   )
 }
